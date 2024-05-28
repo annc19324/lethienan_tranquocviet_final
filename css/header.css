@@ -1,0 +1,287 @@
+Reset CSS
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /* oorigin: only relative */
+    background: var(--button, #000000);
+    height: 48px;
+    
+}
+
+.ok{
+    position: relative;
+    width: 1520px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+
+}
+
+
+body {
+    font-family: 'Poppins';
+}
+
+/* Header */
+.header {
+    width: 100%;
+    position: relative;
+}
+
+
+
+.top-header {
+    background: var(--button, #000000);
+    height: 48px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    /* left: 0;
+    right: 0; */
+}
+
+.frame {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    top: 0%;
+}
+
+.frame-1{
+    line-height: 48px;
+    height: 48px;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    align-items:center ;
+    position: absolute;
+    top: 0%;
+}
+.frame-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    line-height: 48px;
+    height: 48px;
+    left: 81%;
+    padding-left: 50px;
+    top: 0%;
+    font-weight: 100;
+    font-family: 'Poppins';
+
+}
+
+.text-wrapper {
+    color: var(--text, #fafafa);
+    font-size: 14px;
+    line-height: 18px;
+    position: relative;
+}
+
+.shop-now {
+    color: var(--text, #fafafa);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 8px;
+    line-height: 18px;
+    position: relative;
+
+}
+
+.english {
+    color: var(--text, #fafafa);
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.drop-down {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+/* Navigation Bar */
+.header-nabar {
+    position: relative;
+    width: 1170px;
+    top: 0px; 
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    background-color: #FAFAFA;
+    padding: 70px 0 20px 0;
+}
+
+.header-menu {
+    display: flex;
+    gap: 190px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.logo {
+    width: 118px;
+    height: 24px;
+    position: relative;
+}
+
+.exclusive {
+    color: var(--button, #000000);
+    font-size: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* .exclusive:hover{
+    animation: grow-icon 0.1s forwards;
+} */
+
+.header__menu-link {
+    display: flex;
+    gap: 48px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.home,
+.contact,
+.about,
+.sign-up {
+    color: var(--button, #000000);
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+}
+
+.decoration::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    width: 100%;
+    border: 1px solid #808080;
+}
+
+/* Search Box */
+.header-searh {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.search-component-set {
+    background: #E8E8E8;
+    border-radius: 4px;
+    padding: 7px 12px 7px 20px;
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    align-items: center;
+}
+.header-searh__input {
+    width: 100%;
+    padding: 7px 0px; 
+    background: #E8E8E8;
+    border-radius: 4px;
+    border: none;
+    font-size: 12px; 
+    color: var(--text2, #000000);
+
+    outline: none;
+    border: none;
+}
+
+.header-searh__glass {
+    width: 24px;
+    height: 24px;
+}
+.header-searh__box{
+    display: flex;
+    align-items: center;
+}
+/* Icon Bar */
+.Header-nabar__icon {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.user,
+.wishlist,
+.ShoppingCard {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+/* .ShoppingCard {
+    width: 100%;
+    height: 100%;
+} */
+.header-line{
+    border-style: solid;
+    border-color: var(--button, #000000);
+    width: 100%;
+    height: 1px;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0px;
+    background-color: #808080;
+
+    border: 0.5px;
+    opacity: 0.3px;
+    
+}
+
+.hover_color{
+    text-decoration: none;
+}
+
+.hover_color:hover{
+    color: #DB4444;
+}
+
+
+
+
+/* Responsive Design */
+@media only screen and (max-width: 815px) {
+    .main{
+        width: max-content;
+    }
+}
+@media only screen and (min-width: 816px) and (max-width:1179px) {
+    .main {
+        width: max-content; 
+    }
+}
+
+
+
