@@ -1,3 +1,6 @@
+
+//add to cart cho block-item, .block-item__loop, .block-item__loop-clone, .block-item__jfu
+
 document.addEventListener('DOMContentLoaded', function() {
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
     let clickCount = 0;

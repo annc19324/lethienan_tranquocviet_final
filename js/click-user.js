@@ -1,55 +1,40 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const userContainer = document.querySelector('.user-container');
-    const userSettingForm = document.querySelector('.user-setting-form');
-    // const backButton = document.getElementById('backButton');
+document.addEventListener('DOMContentLoaded', function(){
     const back_homepage = document.getElementById('back_homepage');
+    const userContainer = this.querySelector('.user-container');
+    const usersettingform = this.querySelector('.user-setting-form');
 
-    userContainer.addEventListener('click', (event) => {
+    userContainer.addEventListener('click', function(event){
         event.stopPropagation();
-        userSettingForm.style.display = userSettingForm.style.display === 'flex' ? 'none' : 'flex';
-    });
-
-    document.addEventListener('click', (event) => {
-        if (!userContainer.contains(event.target)) {
-            userSettingForm.style.display = 'none';
+        usersettingform.style.display = usersettingform.style.display === 'flex'? 'none' : 'flex'; 
+    })
+    document.addEventListener('click', function(event){
+        if(!userContainer.contains(event.target)){
+            usersettingform.style.display = 'none';
         }
-    });
-
-    // backButton.addEventListener('click', () => {
-    //     window.history.back();
-    // });
-
-    back_homepage.addEventListener('click', () => {
-        window.location.href = '../html/homepage.html';
-    });
-});  
-
-
+    })
+    back_homepage.addEventListener('click', function(){
+        window.location.href='../html/homepage.html';
+    })
+})
 
 
     
-// categories
+// categories right left 
 
     document.addEventListener('DOMContentLoaded', () => {
         const items = document.querySelectorAll('.classification-block__item--active');
         const arrowLeft = document.querySelector('.arrow__left__categor');
         const arrowRight = document.querySelector('.arrow__right__category');
     
-        // Xác định phần tử đầu tiên và thêm lớp 'selected' mặc định
         items[0].classList.add('selected');
     
-        // Sự kiện click vào mỗi mục
-        items.forEach((item, index) => {
-            item.addEventListener('click', () => {
-                // Xóa lớp 'selected' khỏi tất cả các mục
+        items.forEach(function(item){
+            item.addEventListener('click', function(){
                 items.forEach(i => i.classList.remove('selected'));
-                
-                // Thêm lớp 'selected' vào mục được nhấn
                 item.classList.add('selected');
             });
         });
     
-        // Sự kiện click vào nút arrow-left
         arrowLeft.addEventListener('click', () => {
             const current = document.querySelector('.classification-block__item--active.selected');
             current.classList.remove('selected');
@@ -69,6 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
             next.classList.add('selected');
         });
     });
+
+
 
 
     //slideshow

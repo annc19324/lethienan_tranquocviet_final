@@ -1,20 +1,20 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const backToTopBtn = document.getElementById('back-to-top-btn');
-
-    // Thêm sự kiện scroll để hiển thị hoặc ẩn nút back-to-top
-    window.addEventListener('scroll', () => {
-        if (window.scrollY > 300) { // Kéo xuống hơn 300px thì hiển thị nút
-            backToTopBtn.style.display = 'flex';
+document.addEventListener('DOMContentLoaded', function(){
+    const returntop = document.getElementById('back-to-top-btn');
+    
+    window.addEventListener('scroll', function(){
+        if(this.window.scrollY >= 300){
+            returntop.style.display = 'flex';
         } else {
-            backToTopBtn.style.display = 'none';
+            returntop.style.display = 'none';
         }
     });
 
-    // Sự kiện click để quay trở lại đầu trang
-    backToTopBtn.addEventListener('click', () => {
+    returntop.addEventListener('click', function(){
         window.scrollTo({
             top: 0,
-            behavior: 'smooth' // Cuộn mượt
+            behavior: 'smooth',
         });
     });
 });
+
+
