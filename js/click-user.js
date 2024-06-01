@@ -148,5 +148,7 @@ document.addEventListener('DOMContentLoaded', function(){
     
         // Create the second slideshow
         createSlideshow('.block-items__ourproducts', '.block-item__loop-clone', '.arrow__left-clone', '.arrow__right-clone');
+    
+    
     });
     
